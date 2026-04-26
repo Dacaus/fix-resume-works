@@ -1,0 +1,45 @@
+Output file: /workspaces/fix-resume-works/matrix-multiplication/benchmark_20260426_080946.txt
+Started at: 2026-04-26 08:09:46
+i-j-k: 52.526852 seconds
+C[0][0] = 852.333496 (防优化)
+
+real	0m52.552s
+user	0m52.537s
+sys	0m0.016s
+i-j-k: 65.890131 seconds
+C[0][0] = 852.333496 (防优化)
+
+ Performance counter stats for '/workspaces/fix-resume-works/matrix-multiplication/matmul_ijk':
+
+       14458941364      cache-references                                                      
+        7391880407      cache-misses                     #   51.12% of all cache refs         
+        4500079005      instructions                     #    0.02  insn per cycle            
+      271238251178      cycles                                                                
+
+      65.922050036 seconds time elapsed
+
+      65.898732000 seconds user
+       0.015998000 seconds sys
+
+
+i-k-j: 0.554380 seconds
+
+real	0m0.580s
+user	0m0.560s
+sys	0m0.020s
+i-k-j: 0.518938 seconds
+
+ Performance counter stats for '/workspaces/fix-resume-works/matrix-multiplication/matmul_ikj':
+
+         276371611      cache-references                                                      
+           7879307      cache-misses                     #    2.85% of all cache refs         
+        2627760490      instructions                     #    1.19  insn per cycle            
+        2211309393      cycles                                                                
+
+       0.544073822 seconds time elapsed
+
+       0.519962000 seconds user
+       0.023998000 seconds sys
+
+
+Finished at: 2026-04-26 08:11:46

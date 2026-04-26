@@ -1,0 +1,4 @@
+Output file: /workspaces/fix-resume-works/matrix-multiplication/benchmark_20260426_082433.txt
+Started at: 2026-04-26 08:24:33
+clang++: error: no such file or directory: ' '
+clang++: error: no input files

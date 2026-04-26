@@ -2,7 +2,8 @@
 	"name": "fix-resume",
 	"image": "irlr:latest",
 	"runArgs": [
-			"--runtime=nvidia"
+			"--runtime=nvidia",
+			"--privileged"
 		],
 	// Configure vscode-extensions.
 	"customizations": {

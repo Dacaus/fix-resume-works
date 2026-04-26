@@ -1,0 +1,45 @@
+Output file: perf_output.txt
+Started at: 2026-04-26 07:23:29
+i-j-k: 0.604321 seconds
+
+real	0m0.631s
+user	0m0.602s
+sys	0m0.029s
+i-j-k: 0.525591 seconds
+
+ Performance counter stats for '/workspaces/fix-resume-works/matrix-multiplication/matmul_ijk':
+
+         279052446      cache-references                                                      
+           4815638      cache-misses                     #    1.73% of all cache refs         
+        2627837746      instructions                     #    1.18  insn per cycle            
+        2222926556      cycles                                                                
+
+       0.553393264 seconds time elapsed
+
+       0.525929000 seconds user
+       0.027890000 seconds sys
+
+
+i-k-j: 0.763366 seconds
+C[0][0] = 0.000000 (防优化)
+
+real	0m0.774s
+user	0m0.758s
+sys	0m0.016s
+i-k-j: 0.769541 seconds
+C[0][0] = 0.000000 (防优化)
+
+ Performance counter stats for '/workspaces/fix-resume-works/matrix-multiplication/matmul_ikj':
+
+         370958980      cache-references                                                      
+            786265      cache-misses                     #    0.21% of all cache refs         
+        4066335008      instructions                     #    1.27  insn per cycle            
+        3196914461      cycles                                                                
+
+       0.780032423 seconds time elapsed
+
+       0.760056000 seconds user
+       0.020001000 seconds sys
+
+
+Finished at: 2026-04-26 07:23:32

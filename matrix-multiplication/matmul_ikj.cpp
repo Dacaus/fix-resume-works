@@ -15,11 +15,15 @@ void matmul_ikj() {
 }
 
 int main() {
-
     //  初始化
-    for (int i = 0; i < N; i++)
-        for (int j = 0; j < N; j++)
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            
+            A[i][j] = (double)(i + j) / N;
+            B[i][j] = (double)(i - j + N) / N;
             C[i][j] = 0.0;
+        }
+        }
 
     clock_t start = clock();
     matmul_ikj();  // 再跑快的版本

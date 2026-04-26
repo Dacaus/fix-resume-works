@@ -14,8 +14,6 @@ void matmul_ijk() {
                 C[i][j] += A[i][k] * B[k][j];
 }
 
-
-
 int main() {
     // 初始化
     for (int i = 0; i < N; i++) {
